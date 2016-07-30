@@ -32,6 +32,7 @@ function showAlbums(response, artistName){
 	$(".modal-artist-name").text(artistName);
 	var albums = response.items;
 	albums.forEach(appendAlbum);
+	$(".modal").modal("show");
 }
 
 
